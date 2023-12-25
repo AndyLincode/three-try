@@ -128,6 +128,7 @@ window.addEventListener('click', onMouseClick, false)
 
 // 可控制視角(放大縮小、轉動)
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableRotate = false;
 
 // 環境光線
 const light = new THREE.AmbientLight(0xffffff, 1.8);
